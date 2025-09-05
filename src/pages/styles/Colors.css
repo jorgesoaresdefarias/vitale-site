@@ -1,0 +1,9 @@
+/* src/constants/colors.css */
+:root {
+  --light-magenta: #e8bfd6;
+  --dark-magenta: #822a5a;
+  --darkest-magenta: #521335;
+  --faded-magenta: #a4527b;
+  --white: #F5F5F5;
+  --black: #000000;
+}

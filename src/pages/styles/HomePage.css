@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'AVEstiana'; /* nome que você vai usar no CSS */
+    src: url('fonts/av-estiana-font-family-1751629003-0/AVEstiana-Regular-BF67761220bee90.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'khujasmooth'; /* nome que você vai usar no CSS */
+    src: url('fonts/khujasmooth-unio/KhujaSmooth-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'AVEstiana' sans-serif;
+    background-color: var(--light-magenta);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.first_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* optional, adds space between left/right */
+    align-items: center; /* align items vertically at top */
+    height: 100vh; 
+    background-image: url("/simbolo-4.png") ;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: -30%;
+}
+
+.left_wrapper {
+   /* takes half of the available space */
+  flex:1;
+  margin-left: 5%;
+}
+
+.left_wrapper h1 {
+    font-family: 'khujasmooth', sans-serif;
+    width: 70%;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 7vh;
+    text-align: center;
+    color: var(--darkest-magenta);
+}
+
+.left_wrapper h2 {
+    font-family: 'khujasmooth', sans-serif;
+    color: var(--darkest-magenta);
+    width: 70%;
+    font-weight: bolder;
+    font-size: 5vh;
+    text-align: center;
+    margin: 0; 
+}
+.left_wrapper p {
+    font-family: 'AVEstiana' sans-serif;
+    color: var(--darkest-magenta);
+    width: 70%;
+    text-align: center;
+    font-size: 1.6vh;
+    margin: 0; 
+}
+
+
+.right_wrapper {
+  flex: 1;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a1233; /* vinho escuro */
+  text-align: center;
+}
+
+/* ====== Texto acima do formulário ====== */
+.right_wrapper p {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.right_wrapper p span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* ====== Caixa do formulário ====== */
+.side {
+  padding: 20px 25px;
+  margin: 0 auto;
+
+}
+.side p {
+    font-family: 'AVEstiana', sans-serif;
+    width: 70%;
+    font-size: 3vh;
+}
+.side .form {
+  width: 70%;
+  background: #fff;
+  border: 2px solid #e6bdd2;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ====== Título do formulário ====== */
+.side h2 {
+  font-family: 'khujasmooth', sans-serif;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e6bdd2;
+  color: #4a1233;
+  border-radius: 15px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ====== Campos de entrada ====== */
+.side input {
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.side input:focus {
+  border-color: #b05d85;
+  box-shadow: 0 0 4px rgba(176, 93, 133, 0.5);
+}
+
+/* ====== Botão de enviar ====== */
+.side button {
+  font-family: 'khujasmooth', sans-serif;
+  width: 80%;
+  background-color: #762b56;
+  padding: 5%,5%,5%,5%;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.side button:hover {
+  background-color: #5a1f40;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366; /* verde WhatsApp */
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.whatsapp-float img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  object-fit: contain;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1); /* efeito hover */
+}
+
+.text-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre texto e imagem */
+}
+
+.text-with-logo p {
+  margin: 0;
+  font-size: 1.2rem; /* Ajuste conforme necessário */
+  line-height: 1.4;
+}
+
+.inline-logo {
+  height: 4rem; /* Tamanho da imagem proporcional ao texto */
+}
