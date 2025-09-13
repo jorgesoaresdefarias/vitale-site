@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'AVEstiana'; /* nome que você vai usar no CSS */
+    src: url('fonts/av-estiana-font-family-1751629003-0/AVEstiana-Regular-BF67761220bee90.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'khujasmooth'; /* nome que você vai usar no CSS */
+    src: url('fonts/khujasmooth-unio/KhujaSmooth-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'AVEstiana' sans-serif;
+    background-color: var(--light-magenta);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+.know_page {
+    display: flex;
+    flex-direction: column;
+   /* justify-content: space-between; /* optional, adds space between left/right */
+    align-items: center; /* align items vertically at top */
+    height: 100vh; 
+}
+
+.know_page h1 {
+    font-family: 'khujasmooth', sans-serif;
+    text-align: center;
+    color: var(--darkest-magenta);
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.know_page .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.know_page .wrapper .left {
+    font-family: AVEstiana;
+    align-items: center;
+    /*margin-left: 10%;*/
+}
+
+.know_page .wrapper .left .card {
+  background-color: var(--faded-magenta);   /* cor de fundo */
+  color:var(--light-magenta);              /* cor do texto */
+  border-radius: 999px;        /* bordas arredondadas (pílula) */
+  text-align: center;
+  font-family: AVEstiana, sans-serif; /* fonte legível */
+  font-size: 4vh;
+  width: 65vh;
+  height: 5vh;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.know_page .wrapper .left .card_hide {
+  display: none;
+  background: var(--light-magenta);
+  border: 3px solid var(--darkest-magenta);
+  width: 60vh;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'AVEstiana', sans-serif;
+  font-size: 2vh;
+  color: var(--darkest-magenta);
+  text-align: center;
+}
+
+.know_page .wrapper .left .card_container:hover .card_hide {
+  display: block;
+}
+
+.know_page .wrapper .left .button {
+    background-color: var(--darkest-magenta);   /* cor de fundo */
+    color:var(--light-magenta);              /* cor do texto */
+    border-radius: 999px;        /* bordas arredondadas (pílula) */
+    text-align: center;
+    font-family: 'khujasmooth', sans-serif;
+    font-size: 3vh;
+    width: 65vh;
+    height: 7vh;
+    margin-bottom: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.know_page .wrapper .right {
+    width:40%;
+}
+
+.know_page .wrapper .right .img {
+    background-image: url("/slogan.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50vh;
+    height: 30vh; 
+    margin-left: 10%;
+}
+
+.know_page .wrapper .right .text {
+    display: flex;    
+    align-items: center; 
+    font-family: 'khujasmooth', sans-serif;  
+    font-size: 3vh; 
+}
+
+
+.know_page .wrapper .right .text .logo {
+    width: 40px;                   /* ajusta tamanho */
+    height: 40px;
+    background-image: url("/simbolo-5.png"); /* seu ícone */
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 3%;
+}
+
+.know_page .wrapper .right .step_by_step .first{
+    display: flex;
+    flex-direction: row;
+}
+
+.know_page .wrapper .right .step_by_step .second {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.know_page .wrapper .right .step_by_step .card2 {
+    background-color: var(--faded-magenta);   /* cor de fundo */
+    color:var(--light-magenta);              /* cor do texto */
+    border-radius: 999px;        /* bordas arredondadas (pílula) */
+    text-align: center;
+    font-family: AVEstiana, sans-serif; /* fonte legível */
+    font-size: 2.5vh;
+    width: 30vh;
+    height: 7vh;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.know_page .wrapper .right .step_by_step .arrow{
+    width: 40px;                   /* ajusta tamanho */
+    height: 40px;
+    background-image: url(./arrow_right.png);
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.know_page .wrapper .right .step_by_step .arrow2{
+    width: 40px;                   /* ajusta tamanho */
+    height: 40px;
+    background-image: url(./arrow_right.png);
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    transform: scaleX(-1);
+}
+
+.know_page .wrapper .right .step_by_step .arrow3{
+    width: 40px;                   /* ajusta tamanho */
+    height: 40px;
+    background-image: url(./arrow_right.png);
+    display: flex;
+    flex-direction: row;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    transform: rotate(90deg); 
+
+    margin-left: auto;  /* empurra a seta para a direita */
+    margin-right: 30%;    /* garante que fique encostada */
+}

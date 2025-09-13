@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'AVEstiana'; /* nome que você vai usar no CSS */
+    src: url('fonts/av-estiana-font-family-1751629003-0/AVEstiana-Regular-BF67761220bee90.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'khujasmooth'; /* nome que você vai usar no CSS */
+    src: url('fonts/khujasmooth-unio/KhujaSmooth-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'AVEstiana' sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+.plan_page {
+    height: 100vh; 
+}
+
+.plan_page .title {
+    font-family: 'khujasmooth';
+    color: var(--darkest-magenta);
+    font-size: 10vh;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.plan_page p {
+    text-align: center;
+    font-family: 'AVEstiana';
+    font-size: 3.5vh;
+    color: var(--darkest-magenta);
+}
+
+.plan_page .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.plan_page .wrapper h2 {
+    font-family: 'khujasmooth';
+    color: var(--darkest-magenta);
+    font-size: 4vh;
+    text-align: center;
+    text-decoration: underline;
+}
+.plan_page .wrapper .left {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.plan_page .wrapper .right {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+.plan_page .wrapper .card {
+    background-color: #b46490;
+    border-radius: 20px;
+    width: 50vh;
+    max-height: 50;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.card p {
+  margin: 0 0 10px 0; /* só adiciona espaço abaixo de cada linha */
+  font-family: 'AVEstiana';
+  font-size: 2.5vh;
+  text-align: left;
+  font-weight: bold;
+  color: var(--darkest-magenta);
+}
+
+.plan_page .wrapper .left .button {
+    font-family: 'khujasmooth';
+    text-align: center;
+    background-color: var(--dark-magenta);
+    width: 110%;
+    border-radius: 20px;
+    font-size: 20px;
+    /*font-size: 3vh;*/
+    color: var(--light-magenta);
+    height: 15%;
+    margin-top: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

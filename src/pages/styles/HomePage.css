@@ -26,10 +26,10 @@ html, body {
     justify-content: space-between; /* optional, adds space between left/right */
     align-items: center; /* align items vertically at top */
     height: 100vh; 
-    background-image: url("/simbolo-4.png") ;
+    background-image: url("/simbolo-4.svg") ;
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position: -30%;
+    background-position: -30% 100%;
 }
 
 .left_wrapper {
@@ -92,10 +92,10 @@ html, body {
   margin: 0 auto;
 
 }
-.side p {
+.side .text-with-logo p {
     font-family: 'AVEstiana', sans-serif;
     width: 70%;
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 .side .form {
   width: 70%;
@@ -199,5 +199,17 @@ html, body {
 }
 
 .inline-logo {
+  margin-left: 5%;
   height: 4rem; /* Tamanho da imagem proporcional ao texto */
+  animation: girar 10s linear infinite;
+}
+
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

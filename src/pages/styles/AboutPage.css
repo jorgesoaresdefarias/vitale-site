@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'AVEstiana'; /* nome que você vai usar no CSS */
+    src: url('fonts/av-estiana-font-family-1751629003-0/AVEstiana-Regular-BF67761220bee90.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'khujasmooth'; /* nome que você vai usar no CSS */
+    src: url('fonts/khujasmooth-unio/KhujaSmooth-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'AVEstiana' sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+
+.about_page {
+    background-color: var(--darkest-magenta);
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+}
+
+.about_page .left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%; /* ocupa altura do pai (.about_page) */
+    position: relative;
+}
+.about_page .left .title1 {
+    font-family: khujasmooth;
+    background-color: var(--light-magenta);
+    color: var(--faded-magenta);
+    width: 80%;
+    font-size: 8vh;
+    display: flex;
+    border-radius:20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3%;
+}
+
+.about_page .left .text {
+    font-family: 'AVEstiana';
+    color: var(--light-magenta);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3%;
+    font-size: 2.5vh;
+}
+
+.about_page .left .name {
+    margin: 0 auto; /* centraliza horizontalmente */
+    background-color: var(--white);
+    font-family: 'AVEstiana';
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 5%;
+    color: var(--faded-magenta);
+    font-weight: bold;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_page .left .name span {
+    color: var(--darkest-magenta);
+}
+
+.about_page .left .image {
+    width: 100%;
+    height: 100%;          /* define altura da imagem em relação ao pai */
+    background-image: url("/foto_rosto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding-top: 3%;      /* empurra para o bottom */
+    position: relative; /* importante para o overlay */
+    overflow: hidden; 
+}
+@keyframes girar {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.about_page .left .image .overlay-image {
+    position: absolute;
+    top: 40%;           /* ajusta a altura para o topo */
+    left: 50%;          /* centraliza horizontalmente */
+    transform: translateX(-50%);
+    width: 110%;        /* largura da overlay */
+    height: 110%;       /* altura da overlay */
+    background-image: url("/simbolo-4.svg");
+    background-repeat: no-repeat;
+    background-size: contain; /* mantém proporção */
+    background-position: center;
+    animation: girar 10s linear infinite;
+}
+
+
+.about_page .right .title2{
+    font-family: khujasmooth;
+    background-color: var(--light-magenta);
+    color: var(--darkest-magenta);
+    width: 80%;
+    font-size: 8vh;
+    display: flex;
+    border-radius:20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3%;
+}
+
+.about_page .right .text2 {
+    font-family: AVEstiana;
+    font-size: 2.5vh;
+    background-color: var(--faded-magenta);
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 50px;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.about_page .right .text3 {
+    font-family: khujasmooth;
+    font-size: 5vh;
+    color: var(--darkest-magenta);
+    text-align: center;
+    background-color: var(--light-magenta);
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3%;
+    margin-top: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.about_page .right .values .val {
+    font-family: khujasmooth;
+    font-size: 3vh;
+    color: var(--darkest-magenta);
+    text-align: center;
+    background-color: var(--faded-magenta);
+    margin-top: 5%;
+    width: 40%;
+    border-radius: 50px;
+    margin: 0 auto; /* centraliza horizontalmente */
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.about_page .right .values .first{
+    display: flex;
+    flex-direction: row;
+}
+
+.about_page .right .values .second{
+    display: flex;
+    flex-direction: row;
+}
