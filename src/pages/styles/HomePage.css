@@ -165,21 +165,20 @@ html, body {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  width: 60px;
+  width: 100px;
   height: 60px;
-  background-color: #25D366; /* verde WhatsApp */
+  background-color: transparent; /* verde WhatsApp */
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .whatsapp-float img {
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .whatsapp-float img:hover {

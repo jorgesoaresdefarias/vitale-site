@@ -1,8 +1,30 @@
-
 import "./styles/Colors.css";
 import "./styles/HomePage.css";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 function HomePage() {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // evita que a página recarregue
+    emailjs
+      .sendForm(
+        "service",
+        "template",
+        form.current!,
+        "api"
+      )
+      .then(
+        (result) => {
+          alert("E-mail enviado com sucesso!");
+        },
+        (error) => {
+          alert("Erro ao enviar e-mail: " + error.text);
+        }
+      );
+  };
+
   return (
     <div className="first_page">
         <div className="left_wrapper">
@@ -17,7 +39,7 @@ function HomePage() {
               <img src="/simbolo-5.png" alt="Logo" className="inline-logo" />
              </div>
                 <div className="form">
-                  <form action="submit" method="post">
+                  <form ref={form} onSubmit={sendEmail} action="submit" method="post">
                     <h2>SOLICITE SEU ORÇAMENTO:</h2>
                     <input type="text" name="name" id="name" placeholder="Nome completo..."/>
                     <input type="text" name="brand" id="brand" placeholder="Nome da marca..."/>

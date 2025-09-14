@@ -49,7 +49,7 @@ function KnowPage() {
                 <div className="card_hide">envio de notificação em caso de uso indevido de marca.</div>
             </div>
 
-            <a href=""><div className="button">DESEJO UM DESSES SERVIÇOS</div></a>
+            <a href="https://wa.me/5581984465746" target="_blank"><div className="button">DESEJO UM DESSES SERVIÇOS</div></a>
         </div>
         <div className="right">
             <div className="img">

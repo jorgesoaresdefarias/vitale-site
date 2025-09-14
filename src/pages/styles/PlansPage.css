@@ -101,3 +101,17 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.plan_page .wrapper .wrapper_text {
+    display: flex;
+    flex-direction: row;
+}
+
+.plan_page .wrapper .wrapper_text .icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('/icon_accept.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

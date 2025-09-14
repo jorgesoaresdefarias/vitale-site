@@ -10,7 +10,7 @@ function AboutPage() {
             QUEM SOMOS?
         </div>
         <div className="text">Somos a VITALE, uma empresa especialista no direito de marca, constituída por duas graduandas de Direito da UFPE</div>
-        <div className="name"><span>Vit</span>ória Miranda e <span>Ale</span>ssya Saldanha</div>
+        <div className="name"><span>Vit</span>ória Miranda e&nbsp;<span>Ale</span>ssya Saldanha</div>
         <div className="image"><div className="overlay-image"></div></div>
     </div>
     <div className="right">

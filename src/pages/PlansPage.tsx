@@ -10,34 +10,52 @@ function PlansPage() {
             <div className="left">
                 <h2>Básico</h2>
                 <div className="card">
-                    <p>Análise de viabilidade e diagnóstico da marca</p>
-                    <p>Estratégia consolidada para protocolo</p>
-                    <p>Protocolo do registro</p>
-                    <p>Acompanhamento e envio de relatórios mensais</p>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Análise de viabilidade e diagnóstico da marca</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Estratégia consolidada para protocolo</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Protocolo do registro</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Acompanhamento e envio de relatórios mensais</p></div>
                 </div>
-                <a href=""><div className="button">SOLICITE SEU ORÇAMENTO</div></a>
+                <a href="https://wa.me/5581984465746" target="_blank"><div className="button">SOLICITE SEU ORÇAMENTO</div></a>
             </div>
-            <div className="mid">
+           <div className="mid">
                 <h2>Completo</h2>
                 <div className="card">
-                    <p>Análise de viabilidade e diagnóstico da marca </p>
-                    <p>Estratégia consolidada para protocolo</p>
-                    <p>Protocolo do registro</p>
-                    <p>Acompanhamento e envio de relatórios mensais</p>
-                    <p>Elaboração de manifestação a oposicação</p>
-                    <p>Elaboração de recurso contra o indeferimento</p>
+                    <div className="wrapper_text">
+                        <img src="/icon_accept.png" alt="Logo" className="icon" />
+                        <p>Análise de viabilidade e diagnóstico da marca</p>
+                    </div>
+                    <div className="wrapper_text">
+                        <img src="/icon_accept.png" alt="Logo" className="icon" />
+                        <p>Estratégia consolidada para protocolo</p>
+                    </div>
+                    <div className="wrapper_text">
+                        <img src="/icon_accept.png" alt="Logo" className="icon" />
+                        <p>Protocolo do registro</p>
+                    </div>
+                    <div className="wrapper_text">
+                        <img src="/icon_accept.png" alt="Logo" className="icon" />
+                        <p>Acompanhamento e envio de relatórios mensais</p>
+                    </div>
+                    <div className="wrapper_text">
+                        <img src="/icon_accept.png" alt="Logo" className="icon" />
+                        <p>Elaboração de manifestação a oposição</p>
+                    </div>
+                    <div className="wrapper_text">
+                        <img src="/icon_accept.png" alt="Logo" className="icon" />
+                        <p>Elaboração de recurso contra o indeferimento</p>
+                    </div>
                 </div>
             </div>
             <div className="right">
                 <h2>Premium</h2>
                 <div className="card">
-                    <p>Análise de viabilidade e diagnóstico da marca</p>
-                    <p>Estratégia consolidada para protocolo</p>
-                    <p>Protocolo do registro</p>
-                    <p>Acompanhamento e envio de relatórios mensais</p>
-                    <p>Elaboração de manifestação a oposicação</p>
-                    <p>Elaboração de recurso contra o indeferimento</p>
-                    <p>Protocolo extra em caso de indeferimento do seu registro de marca</p>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Análise de viabilidade e diagnóstico da marca</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Estratégia consolidada para protocolo</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Protocolo do registro</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Acompanhamento e envio de relatórios mensais</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Elaboração de manifestação a oposicação</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Elaboração de recurso contra o indeferimento</p></div>
+                    <div className="wrapper_text"><img src="/icon_accept.png" alt="Logo" className="icon" /><p>Protocolo extra em caso de indeferimento do seu registro de marca</p></div>
                 </div>
             </div>
         </div>

@@ -113,6 +113,7 @@ a {
 
 .know_page .wrapper .right .text {
     display: flex;    
+    color: var(--darkest-magenta);
     align-items: center; 
     font-family: 'khujasmooth', sans-serif;  
     font-size: 3vh; 
@@ -158,8 +159,8 @@ a {
 }
 
 .know_page .wrapper .right .step_by_step .arrow{
-    width: 40px;                   /* ajusta tamanho */
-    height: 40px;
+    width: 70px;                   /* ajusta tamanho */
+    height: 70px;
     background-image: url(./arrow_right.png);
     display: flex;
     flex-direction: row;
@@ -173,8 +174,8 @@ a {
 }
 
 .know_page .wrapper .right .step_by_step .arrow2{
-    width: 40px;                   /* ajusta tamanho */
-    height: 40px;
+    width: 70px;                   /* ajusta tamanho */
+    height: 70px;
     background-image: url(./arrow_right.png);
     display: flex;
     flex-direction: row;
@@ -189,8 +190,8 @@ a {
 }
 
 .know_page .wrapper .right .step_by_step .arrow3{
-    width: 40px;                   /* ajusta tamanho */
-    height: 40px;
+    width: 70px;                   /* ajusta tamanho */
+    height: 70px;
     background-image: url(./arrow_right.png);
     display: flex;
     flex-direction: row;

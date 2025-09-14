@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'AVEstiana'; /* nome que você vai usar no CSS */
+    src: url('fonts/av-estiana-font-family-1751629003-0/AVEstiana-Regular-BF67761220bee90.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'khujasmooth'; /* nome que você vai usar no CSS */
+    src: url('fonts/khujasmooth-unio/KhujaSmooth-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'AVEstiana' sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+.end_page {
+  height: 90vh;
+}
+
+.end_page .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.end_page .wrapper .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.end_page .wrapper {
+    border: 2px solid var(--darkest-magenta); /* borda branca */
+    background-color: transparent; /* fundo transparente */
+    width: 90%;
+    margin: 0 auto; /* centraliza horizontalmente */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+
+.end_page .wrapper .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.end_page .wrapper .left .foto_rosto {
+    margin-top: 5%;
+    width: 100%;
+    height: 120%;
+    margin: 0 auto; /* centraliza horizontalmente */
+}
+.end_page .wrapper .left .foto_logo {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto; /* centraliza horizontalmente */
+}
+.end_page .wrapper .right .social {
+    background-color: #a1778fc4;
+    font-family: 'AVEstiana'; 
+    border-radius: 10px;
+    color: var(--darkest-magenta);
+    width: 80%;
+    font-size: 3vh;
+    margin-top: 3%;
+    height: 5vh;
+    margin-left: 10%;
+}
+.end_page .wrapper .right p {
+    font-family: 'AVEstiana'; 
+    color: var(--darkest-magenta);
+    margin: 0 auto; /* centraliza horizontalmente */
+    font-size: 4vh;
+    font-weight: bold;
+    margin-top: 20%;
+}
+.end_page .wrapper .right .icon{
+    width: 50px;
+}
