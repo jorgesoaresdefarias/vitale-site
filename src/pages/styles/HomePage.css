@@ -212,3 +212,92 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+  .first_page {
+    flex-direction: column; /* Coloca os blocos um em cima do outro */
+    justify-content: center;
+    align-items: center;
+    background-size: 120%; /* aumenta a imagem de fundo no mobile */
+    background-position: center top;
+    height: auto; /* permite crescer conforme o conteúdo */
+    padding: 20px 0;
+  }
+
+  .left_wrapper {
+    margin-left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .left_wrapper h1 {
+    width: 100%;
+    font-size: 5vh; /* diminui um pouco no mobile */
+  }
+
+  .left_wrapper h2 {
+    width: 100%;
+    font-size: 4vh;
+  }
+
+  .left_wrapper p {
+    width: 90%;
+    font-size: 2vh;
+    margin: 10px auto;
+  }
+
+  .right_wrapper {
+    padding: 15px;
+    width: auto;
+  }
+
+  .right_wrapper .text-with-logo p{
+    margin: 0 auto;
+    width: auto;
+    font-size: 30px;
+  }
+
+  .right_wrapper .inline-logo{
+    display: none;
+  }
+
+  .side {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .side .form {
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .side h2 {
+    font-size: 16px;
+    margin:0;
+    margin-bottom: 3%;
+    width: 95%;
+    border-radius: 0;
+  }
+
+  .side input{
+    width: 70%;
+  }
+  .side button {
+    width: 70%;
+    font-size: 14px;
+  }
+
+
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float img {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -23,10 +23,11 @@ a {
 }
 
 .attention_page {
-  height: 100vh;
+  height: auto;
   position: relative;
   background-color: var(--darkest-magenta);
   overflow: hidden;
+  padding-bottom: 5%;
 }
 
 .attention_page .background-image {
@@ -103,6 +104,7 @@ a {
     width: 50%;
 }
 
+
 .attention_page .wrapper .right .evite_text p,
 .attention_page .wrapper .right .evite_text h1,
 .attention_page .wrapper .right .evite_text h2,
@@ -140,4 +142,54 @@ a {
     font-size: 3vh;
     text-align: justify;
     color: var(--light-magenta);
+}
+
+@media screen and (max-width: 768px) {
+
+  .attention_page .title {
+      flex-direction: column; /* título empilhado se necessário */
+      width: 90%;             /* ocupa quase toda a largura */
+  }
+
+  .attention_page .title .inline-logo {
+    display: none;
+  }
+
+  .attention_page .title h1 {
+      font-size: 3vh;         /* reduz o tamanho do título no celular */
+  }
+
+  .attention_page .wrapper {
+      flex-direction: column; /* empilha esquerda e direita */
+      width: 95%;             /* ocupa quase toda a largura da tela */
+      padding-bottom: 5%;
+  }
+
+  .attention_page .wrapper .left,
+  .attention_page .wrapper .right {
+      width: 100%;            /* cada bloco ocupa 100% da largura */
+      margin-bottom: 15px;    /* separação entre os blocos */
+  }
+
+  .attention_page .wrapper .left .att_text {
+      width: 90%;             /* ajusta largura do bloco interno */
+      font-size: 6vw;         /* escala o texto proporcionalmente */
+  }
+
+  .attention_page .wrapper .left ul,
+  .attention_page .wrapper .right ol {
+      width: 80%;             /* ajusta largura das listas */
+      font-size: 4vw;         /* escala o texto proporcionalmente */
+  }
+
+  .attention_page .wrapper .right .evite_text {
+      width: 95%;             /* ajusta o bloco direito */
+      font-size: 16px;        /* reduz o tamanho do texto */
+      padding: 10px;          /* mantém respiro interno */
+      margin-top: 10px;
+  }
+
+  .attention_page .background-image {   
+      display: none;
+  }
 }

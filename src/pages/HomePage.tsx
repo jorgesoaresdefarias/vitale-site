@@ -5,22 +5,27 @@ import { useRef } from "react";
 
 function HomePage() {
   const form = useRef<HTMLFormElement | null>(null);
-
+  const service = ""
+  const template = ""
+  const api = ""
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // evita que a página recarregue
     emailjs
       .sendForm(
-        "service",
-        "template",
+        service,
+        template,
         form.current!,
-        "api"
+        api
       )
       .then(
         (result) => {
           alert("E-mail enviado com sucesso!");
         },
         (error) => {
-          alert("Erro ao enviar e-mail: " + error.text);
+          alert("Erro ao enviar e-mail: " + service);
+          console.log(service)
+          console.log(template)
+          console.log(api)
         }
       );
   };

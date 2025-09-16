@@ -188,3 +188,64 @@ a {
     display: flex;
     flex-direction: row;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .about_page {
+      flex-direction: column; /* empilha left e right */
+      height: auto;           /* deixa altura automática */
+  }
+
+  .about_page .left,
+  .about_page .right {
+      width: 100%;           /* ocupa toda largura */
+      margin-bottom: 20px;   /* separa os blocos */
+  }
+
+  .about_page .left .title1,
+  .about_page .right .title2 {
+      width: 90%;             /* ocupa mais espaço no mobile */
+      font-size: 4vh;         /* reduz tamanho do título */
+      text-align: center;
+  }
+
+  .about_page .left .text,
+  .about_page .right .text2,
+  .about_page .right .text3 {
+      width: 95%;             /* ajusta largura do conteúdo */
+      font-size: 3.5vw;       /* escala o texto proporcionalmente */
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+
+  .about_page .left .name {
+      width: 80%;
+      font-size: 4vw;
+  }
+
+  .about_page .left .image {
+      height: 300px;          /* limita altura da imagem no mobile */
+      background-size: contain;
+      background-position: center top;
+      padding-top: 0;
+  }
+
+  .about_page .left .image .overlay-image {
+      width: 90%;
+      height: 90%;
+      top: 50%;               /* ajusta altura da overlay */
+  }
+
+  .about_page .right .values .first,
+  .about_page .right .values .second {
+      flex-direction: column; /* empilha os valores */
+      width: 100%;
+      gap: 10px;              /* separação entre itens */
+  }
+
+  .about_page .right .values .val {
+      width: 90%;             /* ocupa mais largura no mobile */
+      font-size: 4vw;         /* ajusta tamanho do texto */
+  }
+}

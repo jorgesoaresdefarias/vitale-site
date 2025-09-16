@@ -21,9 +21,10 @@ html, body {
 a {
     text-decoration: none;
 }
-
 .end_page {
-  height: 90vh;
+    height: auto; /* deixa altura do conteúdo controlar */
+    width: auto;
+    clear: both;  /* força quebrar qualquer float anterior */
 }
 
 .end_page .wrapper {
@@ -87,4 +88,51 @@ a {
 }
 .end_page .wrapper .right .icon{
     width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .end_page {
+      margin-top: 5%;
+      position: relative;
+      z-index: 1;
+      height: auto;
+  }
+  .end_page .wrapper {
+      flex-direction: column;  
+      width: 95%;              
+      padding-bottom: 5%;
+      margin-top: 0;          /* remove qualquer gap que force sobreposição */
+  }
+  .end_page .wrapper .left {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .end_page .wrapper .right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .end_page .wrapper .right p {
+    text-align: center;
+    font-size: 25px;
+  }
+ .end_page .wrapper .right .social {
+    font-size: 15px;
+ }
+
+  .end_page .wrapper .left .foto_rosto {
+      width: 80%;              
+      height: auto;           /* importante para expandir o container */
+      margin-top: 5%;
+      display: block;         /* garante que seja considerado no fluxo */
+  }
+
+  .end_page .wrapper .left .foto_logo {
+      width: 50%;              
+      height: auto;
+      margin-top: 10px;
+      display: block;
+  }
 }

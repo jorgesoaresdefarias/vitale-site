@@ -23,7 +23,7 @@ a {
 }
 
 .plan_page {
-    height: 100vh; 
+    height: auto; 
 }
 
 .plan_page .title {
@@ -63,6 +63,7 @@ a {
     margin-right: 5%;
     margin-left: 5%;
 }
+
 
 
 .plan_page .wrapper .card {
@@ -114,4 +115,83 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* Media query para telas até 768px */
+@media screen and (max-width: 768px) {
+
+  .plan_page .wrapper {
+      flex-direction: column;     /* empilha left e right */
+      width: 95%;                 /* ocupa quase toda a largura */
+      margin: 0 auto;             /* centraliza horizontalmente */
+      gap: 20px;                  /* separação entre blocos */
+  }
+
+  .plan_page .wrapper .left,
+  .plan_page .wrapper .right,
+  .plan_page .wrapper .mid{
+      width: 100%;                /* cada bloco ocupa toda largura */
+      margin-left: 3%;
+      margin-right: 0;
+  }
+
+  .plan_page .title {
+      font-size: 8vh;             /* reduz tamanho do título */
+      margin: 0 auto;
+      margin-top: 5%;
+      width: 90%;                 /* ocupa mais espaço */
+  }
+
+  .plan_page .title .inline-logo {
+    display: none;
+  }
+
+  .plan_page p {
+      font-size: 3vh;             /* reduz o texto */
+      text-align: center;
+      padding: 0 5%;
+  }
+
+  .plan_page .wrapper h2 {
+      font-size: 3.5vh;           /* reduz títulos das seções */
+  }
+
+  .plan_page .wrapper .card {
+      width: 90%;                 /* ocupa quase toda largura no mobile */
+      max-height: none;           /* altura automática */
+      padding: 10px;              /* ajusta padding */
+      margin-bottom: 15px;        /* espaçamento entre cards */
+  }
+
+  .card p {
+      font-size: 2.2vh;           /* ajusta tamanho do texto dentro do card */
+  }
+  .plan_page .wrapper .left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .plan_page .wrapper .left .button {
+      width: 90%;                 /* ocupa quase toda largura do bloco */
+      font-size: 3vh;             /* reduz texto do botão */
+      height: auto;               /* altura automática */
+      padding: 10px 0;
+      margin-top: 10px;
+  }
+
+  .plan_page .wrapper .wrapper_text {
+      flex-direction: row;     /* empilha icon e texto */
+      align-items: flex-start;                 /* separação entre icon e texto */
+  }
+
+  .plan_page .wrapper .wrapper_text p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .plan_page .wrapper .wrapper_text .icon {
+      width: 25px;                /* reduz tamanho do ícone */
+      height: 25px;
+      margin-bottom: 5px;
+  }
 }

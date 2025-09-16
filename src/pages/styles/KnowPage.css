@@ -27,7 +27,7 @@ a {
     flex-direction: column;
    /* justify-content: space-between; /* optional, adds space between left/right */
     align-items: center; /* align items vertically at top */
-    height: 100vh; 
+    height: auto; 
 }
 
 .know_page h1 {
@@ -205,3 +205,94 @@ a {
     margin-left: auto;  /* empurra a seta para a direita */
     margin-right: 30%;    /* garante que fique encostada */
 }
+
+/* Media query para telas até 768px */
+@media screen and (max-width: 768px) {
+
+  .know_page .wrapper {
+      flex-direction: column;      /* empilha left e right */
+      width: 95%;                  /* ocupa quase toda a largura */
+      margin: 0 auto;              /* centraliza */
+      gap: 20px;                   /* separação entre os blocos */
+  }
+
+  .know_page .wrapper .left,
+  .know_page .wrapper .right {
+      width: 100%;                 /* cada bloco ocupa toda largura */
+      margin-left: 0;
+  }
+
+
+  .know_page h1 {
+      width: 90%;                  /* ocupa mais espaço */
+      font-size: 3vh;              /* reduz título para mobile */
+  }
+
+  .know_page .wrapper .left .card,
+  .know_page .wrapper .left .button {
+      width: 90%;                  /* ocupa mais largura no mobile */
+      font-size: 2vh;            /* ajusta texto */
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5%;
+  }
+
+  .know_page .wrapper .left .card_hide {
+      width: 85%;
+      font-size: 2vh;
+  }
+
+  .know_page .wrapper .right {
+      align-items: center;         /* centraliza os elementos */
+      margin-bottom: 5%;
+  }
+
+  .know_page .wrapper .right .img {
+      width: 80%;                  /* reduz tamanho da imagem */
+      height: auto;
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  .know_page .wrapper .right .text {
+      font-size: 2.5vh;
+      flex-direction: column;      /* alinha verticalmente */
+      text-align: center;
+  }
+
+  .know_page .wrapper .right .text .logo {
+      margin: 10px auto 0 auto;   /* centraliza o ícone */
+      display: none;
+  }
+
+  .know_page .wrapper .right .step_by_step .first,
+  .know_page .wrapper .right .step_by_step .second {
+      flex-direction: column;      /* empilha os cards e setas */
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .know_page .wrapper .right .step_by_step .card2 {
+      width: 60%;                  /* ocupa mais largura no mobile */
+      font-size: 2.2vh;
+      margin-bottom: 10px;
+  }
+
+  .know_page .wrapper .right .step_by_step .arrow,
+  .know_page .wrapper .right .step_by_step .arrow2,
+  .know_page .wrapper .right .step_by_step .arrow3 {
+      width: 50px;                 /* reduz tamanho da seta */
+      height: 50px;
+      margin: 10px 0;              /* espaçamento vertical */
+      align-items: center;
+      justify-content: center;
+      transform: rotate(90deg); 
+      margin: 0 auto;
+    /* remove rotação/espelhamento problemático */
+  }
+
+
+}
+
